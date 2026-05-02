@@ -1,77 +1,225 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Car Audio Installation Orlando | Ground Level Customs</title>
+  <title>Vehicle Electronics Installation Orlando | Ground Level Customs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Professional car audio installation, window tint, alarms, and custom electronics in Orlando, FL. Call now for same-day service.">
+  <meta name="description" content="Ground Level Customs provides professional vehicle electronics installation in Orlando, FL including dash cameras, strobe lights, LED headlights, CarPlay, backup cameras, car audio, tint, alarms, and more.">
 
   <style>
     body {
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
       background: #111;
       color: white;
+      line-height: 1.6;
     }
 
     header {
-      background: black;
+      background: #000;
       padding: 20px;
       text-align: center;
-      font-size: 28px;
+    }
+
+    header .logo {
+      font-size: 30px;
       font-weight: bold;
     }
 
+    header .tagline {
+      color: #aaa;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #1b1b1b;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 15px;
+    }
+
     .hero {
-      padding: 40px 20px;
+      background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("images/hero-vehicle-electronics.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 70px 20px;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 28px;
+      font-size: 38px;
+      margin-bottom: 12px;
     }
 
     .hero p {
-      font-size: 18px;
-      color: #ccc;
+      font-size: 20px;
+      color: #ddd;
+      max-width: 750px;
+      margin: auto;
     }
 
     .cta {
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     .cta a {
       display: inline-block;
       background: #1a73e8;
       color: white;
-      padding: 15px 25px;
+      padding: 16px 28px;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 18px;
+    }
+
+    .section h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .section-intro {
+      color: #ccc;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 25px;
       font-size: 18px;
     }
 
-    .services {
-      padding: 20px;
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
     }
 
-    .service {
+    .service-card {
       background: #222;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,.35);
     }
 
-    .service a {
-      color: #1a73e8;
+    .service-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      background: #333;
+      display: block;
+    }
+
+    .service-content {
+      padding: 18px;
+    }
+
+    .service-content h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .service-content p {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .service-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: white;
+      background: #1a73e8;
       text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .trust-box {
+      background: #1a1a1a;
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .trust-box p {
+      color: #ddd;
+      font-size: 18px;
+    }
+
+    .contact-box {
+      background: #222;
+      border-radius: 14px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      color: #ddd;
+      margin: 6px 0;
+      font-size: 18px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      padding: 25px 15px;
       color: #aaa;
+      font-size: 14px;
+      background: #000;
+    }
+
+    @media (max-width: 900px) {
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .hero {
+        padding: 50px 16px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta a {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .section h2 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
@@ -79,40 +227,187 @@
 <body>
 
 <header>
-  Ground Level Customs
+  <div class="logo">Ground Level Customs</div>
+  <div class="tagline">Vehicle Electronics • Car Audio • Lighting • Cameras • Orlando, FL</div>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="dash-camera-installation-orlando.html">Dash Cameras</a>
+  <a href="car-audio-installation-orlando.html">Car Audio</a>
+  <a href="strobe-light-installation-orlando.html">Strobe Lights</a>
+  <a href="backup-camera-installation-orlando.html">Backup Cameras</a>
+</nav>
+
 <section class="hero">
-  <h1>Car Audio Installation in Orlando</h1>
-  <p>Custom sound systems, window tint, alarms, and more.</p>
+  <h1>Vehicle Electronics Installation in Orlando, FL</h1>
+  <p>
+    Professional installation for dash cameras, strobe lights, LED headlights, Apple CarPlay,
+    Android Auto, backup cameras, car audio, alarms, tint, and more.
+  </p>
 
   <div class="cta">
-    <a href="tel:4072224926">📞 Call Now</a>
+    <a href="tel:4072224926">📞 Call 407-222-4926</a>
   </div>
 </section>
 
-<section class="services">
+<section class="section">
+  <h2>High-Demand Installation Services</h2>
+  <p class="section-intro">
+    These are some of our most requested vehicle electronics services. Click any service below to learn more or call to schedule.
+  </p>
 
-  <div class="service">
-    <h2>Car Audio Installation</h2>
-    <p>Custom speakers, amps, subwoofers, and full system installs.</p>
-    <a href="car-audio-installation-orlando.html">Car Audio Installation in Orlando</a>
+  <div class="service-grid">
+
+    <div class="service-card">
+      <img src="images/dash-camera-installation.jpg" alt="Dash camera installation in Orlando">
+      <div class="service-content">
+        <h3>Dash Camera Installation</h3>
+        <p>Front, rear, hardwired, and parking mode dash camera installs with clean hidden wiring.</p>
+        <a href="dash-camera-installation-orlando.html">Dash Camera Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/strobe-light-installation.jpg" alt="Strobe light installation for fleet vehicles in Orlando">
+      <div class="service-content">
+        <h3>Strobe Lights & Fleet Lighting</h3>
+        <p>Strobe lights, work vehicle lighting, warning lights, and fleet vehicle electronics installation.</p>
+        <a href="strobe-light-installation-orlando.html">Strobe Light Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/led-headlight-installation.jpg" alt="LED headlight installation in Orlando">
+      <div class="service-content">
+        <h3>LED & HID Headlight Upgrades</h3>
+        <p>LED headlight upgrades, HID replacement options, fog lights, and visibility improvements.</p>
+        <a href="led-headlight-installation-orlando.html">LED Headlight Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/apple-carplay-android-auto.jpg" alt="Apple CarPlay and Android Auto installation in Orlando">
+      <div class="service-content">
+        <h3>Apple CarPlay & Android Auto</h3>
+        <p>Modern radio upgrades with touchscreen, Bluetooth, Apple CarPlay, Android Auto, and backup camera integration.</p>
+        <a href="apple-carplay-android-auto-installation-orlando.html">Apple CarPlay Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/backup-camera-installation.jpg" alt="Backup camera installation in Orlando">
+      <div class="service-content">
+        <h3>Backup Camera Installation</h3>
+        <p>Backup cameras, parking cameras, sensors, and visibility upgrades for safer reversing.</p>
+        <a href="backup-camera-installation-orlando.html">Backup Camera Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/car-audio-installation.jpg" alt="Car audio installation in Orlando">
+      <div class="service-content">
+        <h3>Car Audio Installation</h3>
+        <p>Speakers, amplifiers, subwoofers, radios, DSP tuning, and custom sound system installs.</p>
+        <a href="car-audio-installation-orlando.html">Car Audio Installation in Orlando</a>
+      </div>
+    </div>
+
   </div>
+</section>
 
-  <div class="service">
-    <h2>Window Tint</h2>
-    <p>Professional tint installation for heat and privacy.</p>
+<section class="section">
+  <h2>Additional Services</h2>
+  <p class="section-intro">
+    We also provide supporting installation and diagnostic services to help keep your vehicle comfortable, secure, and upgraded.
+  </p>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <img src="images/car-window-tint.jpg" alt="Car window tint installation in Orlando">
+      <div class="service-content">
+        <h3>Car Window Tint</h3>
+        <p>Automotive window tint for privacy, heat reduction, and a cleaner look.</p>
+        <a href="car-window-tint-orlando.html">Car Window Tint in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/car-alarm-installation.jpg" alt="Car alarm installation in Orlando">
+      <div class="service-content">
+        <h3>Car Alarms & Security</h3>
+        <p>Vehicle alarm systems, security upgrades, and remote start options.</p>
+        <a href="car-alarm-installation-orlando.html">Car Alarm Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/electrical-diagnosis.jpg" alt="Automotive electrical diagnosis in Orlando">
+      <div class="service-content">
+        <h3>Electrical Diagnosis</h3>
+        <p>Troubleshooting wiring, electronics, accessories, lighting, and installation-related issues.</p>
+        <a href="automotive-electrical-diagnosis-orlando.html">Automotive Electrical Diagnosis in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/gps-tracker-installation.jpg" alt="GPS tracker installation in Orlando">
+      <div class="service-content">
+        <h3>GPS Trackers</h3>
+        <p>GPS tracker installation for personal vehicles, business vehicles, and fleet monitoring.</p>
+        <a href="gps-tracker-installation-orlando.html">GPS Tracker Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/power-window-lock-installation.jpg" alt="Power window and power lock installation in Orlando">
+      <div class="service-content">
+        <h3>Power Windows & Locks</h3>
+        <p>Power window repair, power lock upgrades, switch issues, and accessory installation.</p>
+        <a href="power-window-lock-installation-orlando.html">Power Window and Lock Installation in Orlando</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/headliner-carpet-installation.jpg" alt="Automotive headliner and carpet installation in Orlando">
+      <div class="service-content">
+        <h3>Headliners & Carpet</h3>
+        <p>Interior upgrades including headliner replacement, carpet replacement, and interior restoration support.</p>
+        <a href="automotive-headliner-carpet-orlando.html">Automotive Headliner and Carpet in Orlando</a>
+      </div>
+    </div>
+
   </div>
+</section>
 
-  <div class="service">
-    <h2>Car Alarms & Remote Start</h2>
-    <p>Protect your vehicle with modern security systems.</p>
+<section class="section">
+  <div class="trust-box">
+    <h2>Why Choose Ground Level Customs?</h2>
+    <p>
+      Ground Level Customs focuses on clean installation, proper wiring, dependable service, and helping customers choose
+      the right electronics upgrades for their vehicle. We serve Orlando, East Orlando, Union Park, Winter Park, Oviedo,
+      Bithlo, Christmas, and surrounding Central Florida areas.
+    </p>
   </div>
+</section>
 
+<section class="section">
+  <div class="contact-box">
+    <h2>Call or Visit Ground Level Customs</h2>
+    <p><strong>Ground Level Customs</strong></p>
+    <p>1720 N Goldenrod Rd Suite 4</p>
+    <p>Orlando, FL 32807</p>
+    <p><a href="tel:4072224926" style="color:#1a73e8;">Call 407-222-4926</a></p>
+
+    <div class="cta">
+      <a href="tel:4072224926">📞 Schedule Service</a>
+    </div>
+  </div>
 </section>
 
 <footer>
-  © Ground Level Customs | Orlando, FL
+  © Ground Level Customs | Orlando, FL | 407-222-4926
 </footer>
 
 </body>
